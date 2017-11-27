@@ -106,7 +106,13 @@ h5 {
     color: #fff;
     opacity:1; }
 
+.logo {
 
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    margin-left: 650px;
+}
 
 #slide1{
 background:url('../images/401782_4871546303007_767121518_n.jpg') ;
@@ -168,6 +174,8 @@ padding: 140px 0;
     margin: 30px;
 
 }
+
+
 /**** gallery ****/
 
 #slide3{
