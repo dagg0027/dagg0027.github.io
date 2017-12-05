@@ -1,21 +1,84 @@
-/*!
- * Bootstrap v4.0.0-beta (https://getbootstrap.com)
- * Copyright 2011-2017 The Bootstrap Authors
- * Copyright 2011-2017 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-
-body{
+body {
 margin: 0;
-
 width: 100%;
 }
 
+a {
 
-/*** headers ***/
+	color: darkblue;
+	text-decoration: none;
+	font-weight: bold;
+
+}
+
+a:hover {
+
+	color: #444;
+
+}
+
+header {
+
+	
+	width: 100%;
+	height: 76px;
+	position: fixed;
+	top: 0;
+	left: 0;	
+	
+}
+
+
+
+nav {
+
+	float: right;
+	padding: 20px;	
+	
+}
+
+#menu-icon {
+
+	display: hidden;
+	width: 40px;
+	height: 40px;
+	background: url(../images/menu-icon.png) center;
+
+}
+
+a:hover#menu-icon {
+
+	background-color: #444;
+	border-radius: 4px 4px 0 0;
+
+}
+
+ul {
+
+	list-style: none;
+
+}
+
+li {
+
+	display: inline-block;
+	float: left;
+	padding: 10px
+
+}
+
+.current {
+
+	color: #2262AD;
+
+}
+
+
+
+/**** headers ****/
 
 h1 {
-
+    margin-top: 100px;
     font-weight:bold;
     font-size: 55px;
     text-align: center;
@@ -23,8 +86,9 @@ h1 {
 
 }
 
+
 h2 {
-    margin-top: 80px;
+    margin-top: 100px;
     font-weight: bold;
     font-size: 40px;
     text-align: center;
@@ -33,113 +97,67 @@ h2 {
 }
 
 h3 {
-
+    margin-top: 100px;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
-    margin: 5px 0;
     padding: 0;
     z-index: 1;
     position: relative;
 }
 
+
+
 h4 {
-   font-weight: normal;
-    color: white;
-    font-size: 30px;
+   margin-top: 50px;
+    font-weight: bold;
+    font-size: 26px;
     text-align: center;
-    margin-bottom: 50px;
-    padding: 0;
-    z-index: 1;
-    position: relative;
+    color: white;
 
 }
 
 h5 {
-    
+    padding-top: 150px;
     font-weight: bold;
     font-size: 40px;
     text-align: center;
     color: white;
-}
-
-/*** content ***/
-
-.content{
-    margin: 0 auto;
-    width: 960px;
 
 }
 
-
-.content2 {
-     margin: 0 auto;
-    width: 1200px;
-}
+       
 
 
- .nav ul {
-    list-style: none;
-    margin: 0 auto;
-    float: right;
-}
-
-.nav li {
-
-    margin-top: 20px;
-    padding-left: 21px;
-    display: inline-block;
-   }
-
-.nav li a
-
-{
-
-    color: darkblue;
-    opacity:0.6;
-    font-size: 16px;
-    text-decoration: none;
-
-}
-
-.nav li a:hover {
-    color: #fff;
-    opacity:1; }
-
-.logo {
-
-    height: 100px;
-    width: 100px;
-    margin: 0 auto;
-    margin-left: 660px;
-}
+/**** home ***/
 
 #slide1{
 background:url('../images/401782_4871546303007_767121518_n.jpg') ;
-
-height: 300px;
 margin: 0;
 padding: 200px 0 260px 0;
 background-size: cover;
 }
 
-/**** about ****/
-
+/**** about ****/   
+    
 #slide2{
 background-color: #fff;
 color: #333333;
-height: 560px;
 margin: 0 auto;
 overflow: hidden;
-padding: 140px 0;
-}
-
+padding-bottom: 100px;
+padding-top: 100px;
+}  
+    
+  
+    
 .bio {
-    float: right;
-    width: 300px;
-    margin-right: 150px;
-     margin-top: 60px;
-
+   
+    width: 450px;
+    margin-bottom: 30px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 180px;
 
 
   }
@@ -148,44 +166,42 @@ padding: 140px 0;
     border-radius: 50%;
     width: 250px;
     height: 250px;
-    margin-left: 180px;
-     margin-top: 60px;
+    margin-top: 160px;
+    margin-bottom: 50px;
+    margin-left: 350px;
+    float: left;
+    
+
 
   }
 
-.cms {
-  width: 300px;
-  height: 100px;
-    float: left;
-  margin: 30px;
-
-}
-
-.adobe {
-    float: left;
-    width: 100px;
-    height: 100px;
-    margin: 30px;
-}
-
-.microsoft {
-    float:left;
-    width: 300px;
-    margin: 30px;
-
-}
-
-
 /**** gallery ****/
 
+
+h5 {
+   
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+
+}
+
+
 #slide3{
-background: url(../images/cuba.jpg) 50% 0 no-repeat fixed;
-height: 1840px;
-padding: 150px 0 0 0;
+background: url(../images/cuba.jpg)  no-repeat fixed;
 background-size: cover;
 }
 
 
+
+.t {
+    text-align: center;
+}
+
+.bottom {
+    text-align: center;
+}
 
 #image {
     padding: 5px;
@@ -198,6 +214,9 @@ background-size: cover;
     opacity: .75;
     transform: scale(1.02);
 }
+
+
+    
 
 /*** overlay ***/
 
@@ -248,15 +267,198 @@ background-size: cover;
 
 }
 
+    
+
+/*MEDIA QUERRIES*/
 
 
+
+@media only screen and (max-width : 786px) {    
+    
+	header {
+
+		position: absolute;
+
+	} 
+
+	#menu-icon {
+
+		display:inline-block;
+
+	}
+
+	nav ul, nav:active ul { 
+
+		display: none;
+		position: absolute;
+		padding: 20px;
+		background: #fff;
+		border: 5px solid #444;
+		right: 20px;
+		top: 60px;
+		width: 50%;
+		border-radius: 4px 0 4px 4px;
+
+	}
+
+	nav li {
+
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+
+	}
+
+	nav:hover ul {
+
+		display: block;
+
+	}
+    
+    a {
+
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+    }
+        
+/**** about ****/   
+    
+#slide2{
+background-color: #fff;
+color: #333333;
+margin: 0 auto;
+overflow: hidden;
+padding-bottom: 200px;
+padding-top: 50px;
+}  
+    
+  
+    
+.bio {
+   
+    width: 440px;
+    margin-bottom: 30px;
+    margin: 0 auto;
+    margin-left: 170px;
+
+  }
+
+.profile {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    margin-left: 262px;
+
+
+  }
+
+    
+/**** gallery ****/
+
+#slide3{
+background: url(../images/cuba.jpg) 50% 0 no-repeat fixed;
+padding: 150px 0 0 0;
+margin: 0;
+background-size: cover;
+}
+
+.t {
+
+text-align: center;
+}
+    
+    
+h5 {
+   padding-top: 5px;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+
+}    
+
+.bottom {
+    text-align: center;
+}
+
+#image {
+    padding: 5px;
+    cursor: pointer;
+     transition: 0.2s;
+
+    }
+
+#image:hover {
+    opacity: .75;
+    transform: scale(1.02);
+}
+
+.gallery1 {
+    width: 100%;
+}
+    
+
+/*** overlay ***/
+
+#overlay {
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    transition: .3s .4s;
+}
+
+
+#overlay img{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    animation: expand .5s;
+    width:700px;
+
+}
+
+#closebutton {
+    color: white;
+    z-index: 20px;
+    font-size: 25px;
+    font-family: 'Baloo Bhaina', cursive;
+    top: 2px;
+    right:20px;
+    cursor: pointer;
+    position: absolute;
+    font-weight: bold;
+
+
+}
+
+#closebutton:hover {
+      animation: grow 2s;
+
+}
+
+    
 /**** contact ***/
 
 #slide4{
 background-color: #fff;
 color: #333333;
-height: 350px;
 padding: 200px 0;
+margin: 0;
 }
 
 .top {
@@ -323,37 +525,231 @@ padding: 200px 0;
 
 }
 
-/*** keyframes ***/
+}
+  
+@media only screen and (max-width : 460px) {    
+
+    /*** headers ***/
+    
+h3 {
+
+    font-weight: normal;
+    font-size: 30px;
+    text-align: center;
+    margin: 5px 0;
+    padding: 0;
+    z-index: 1;
+    position: relative;
+}
 
 
-@keyframes expand {
-    0% {
-        transform: scale(0.1);
-      }
 
-    100% {
-        transform: scale(1);
-        }
+h4 {
+   margin-top: 50px;
+    font-weight: bold;
+    font-size: 26px;
+    text-align: center;
+    color: white;
+
+}
+
+h5 {
+   padding-top: 5px;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+
+}
+    
+/**** about ****/   
+    
+#slide2{
+background-color: #fff;
+color: #333333;
+margin: 0 auto;
+overflow: hidden;
+padding: 140px 0;
+}  
+
+.bio {
+   
+    width: 270px;
+     margin-bottom: 30px;
+    margin-left: 70px;
+   
+    
+  }
+
+.profile {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-left: 100px;
+     margin-top: 60px;
+    margin-bottom: 50px;
+
+  }
+
+
+    }
+    
+/**** gallery ****/
+
+
+#slide3{
+background: url(../images/cuba.jpg)  no-repeat fixed;
+background-size: cover;
+padding-bottom: 300px;
+}
+
+
+
+.t {
+    text-align: center;
+}
+
+.bottom {
+    text-align: center;
+}
+
+#image {
+    padding: 5px;
+    cursor: pointer;
+     transition: 0.2s;
+
     }
 
-@keyframes grow {
+#image:hover {
+    opacity: .75;
+    transform: scale(1.02);
+}
 
-    0% {
-        transform: scale(1.2);
-        }
+.gallery1 {
+    width: 100%;
+}
+    
 
-    100% {
-        transform: scale(1.2);
-        }
+/*** overlay ***/
+
+#overlay {
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    transition: .3s .4s;
+}
+
+
+#overlay img{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    animation: expand .5s;
+    width:700px;
+
+}
+
+#closebutton {
+    color: white;
+    z-index: 20px;
+    font-size: 25px;
+    font-family: 'Baloo Bhaina', cursive;
+    top: 2px;
+    right:20px;
+    cursor: pointer;
+    position: absolute;
+    font-weight: bold;
+
+
+}
+
+#closebutton:hover {
+      animation: grow 2s;
+
+}
+
+    
+/**** contact ***/
+
+#slide4{
+background-color: #fff;
+color: #333333;
+padding: 200px 0;
+}
+
+.top {
+        text-align: center;
+    font-size: 25px;
+    position: relative;
     }
 
-@keyframes grow2 {
-
-    0% {
-        transform: scale(1.1);
-        }
-
-    100% {
-        transform: scale(1.1);
-        }
+.In {
+     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    position: relative;
     }
+
+
+.network {
+    max-width:300px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 150px;
+    position: relative;
+    }
+
+
+.social1 {
+        width: 90px;
+        height: 90px;
+        float: left;
+        margin: 5px;
+    position: relative;
+    }
+
+.social1:hover{
+
+  animation: grow2 5s;
+}
+
+#overlay {
+
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,0.4);
+    transition: .3s .4s;
+
+}
+
+#overlay img{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    animation: expand .5s;
+    width:300px;
+
+}   
+    
+    
