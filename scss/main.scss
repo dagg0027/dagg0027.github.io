@@ -207,15 +207,13 @@ background-size: cover;
     cursor: pointer;
      transition: 0.2s;
 
-    }
-
-#image:hover {
+&:hover {
     opacity: .75;
     transform: scale(1.02);
-}
-
-
-    
+}	
+	
+	
+    }
 
 /*** overlay ***/
 
@@ -232,10 +230,7 @@ background-size: cover;
     height: 100%;
     background-color: rgba(0,0,0,0.4);
     transition: .3s .4s;
-}
-
-
-#overlay img{
+img {
     top: 0;
     left: 0;
     right: 0;
@@ -245,7 +240,12 @@ background-size: cover;
     animation: expand .5s;
     width:700px;
 
+  }	
+	
 }
+
+
+
 
 #closebutton {
     color: white;
@@ -258,14 +258,12 @@ background-size: cover;
     position: absolute;
     font-weight: bold;
 
-
-}
-
-#closebutton:hover {
+&:hover {
       animation: grow 2s;
 
 }
 
+}
     
 
 /*MEDIA QUERRIES*/
@@ -286,7 +284,7 @@ background-size: cover;
 
 	}
 
-	nav ul, nav:active ul { 
+	nav ul { 
 
 		display: none;
 		position: absolute;
@@ -297,6 +295,12 @@ background-size: cover;
 		top: 60px;
 		width: 50%;
 		border-radius: 4px 0 4px 4px;
+		
+	&:hover  {
+
+		display: block;
+
+	}	
 
 	}
 
@@ -308,12 +312,7 @@ background-size: cover;
 		margin: 0;
 
 	}
-
-	nav:hover ul {
-
-		display: block;
-
-	}
+	
     
     a {
 
@@ -388,13 +387,15 @@ h5 {
     padding: 5px;
     cursor: pointer;
      transition: 0.2s;
+	
+&:hover {
+    opacity: .75;
+    transform: scale(1.02);
+}	
 
     }
 
-#image:hover {
-    opacity: .75;
-    transform: scale(1.02);
-}
+
 
 .gallery1 {
     width: 100%;
@@ -416,10 +417,8 @@ h5 {
     height: 100%;
     background-color: rgba(0,0,0,0.4);
     transition: .3s .4s;
-}
-
-
-#overlay img{
+	
+ img {
     top: 0;
     left: 0;
     right: 0;
@@ -429,7 +428,11 @@ h5 {
     animation: expand .5s;
     width:700px;
 
+}	
 }
+
+
+
 
 #closebutton {
     color: white;
@@ -441,14 +444,15 @@ h5 {
     cursor: pointer;
     position: absolute;
     font-weight: bold;
-
-
-}
-
-#closebutton:hover {
+	
+&:hover {
       animation: grow 2s;
 
 }
+
+}
+
+
 
     
 /**** contact ***/
@@ -490,12 +494,14 @@ margin: 0;
         float: left;
         margin: 5px;
     position: relative;
-    }
-
-.social1:hover{
+	
+&:hover{
 
   animation: grow2 5s;
-}
+}	
+    }
+
+
 
 #overlay {
 
@@ -509,10 +515,8 @@ margin: 0;
     left:0;
     background-color: rgba(0,0,0,0.4);
     transition: .3s .4s;
-
-}
-
-#overlay img{
+	
+ img{
     top: 0;
     left: 0;
     right: 0;
@@ -522,7 +526,11 @@ margin: 0;
     animation: expand .5s;
     width:700px;
 
+}	
+
 }
+
+
 
 }
   
@@ -616,13 +624,14 @@ padding-bottom: 300px;
     padding: 5px;
     cursor: pointer;
      transition: 0.2s;
-
-    }
-
-#image:hover {
+	
+&:hover {
     opacity: .75;
     transform: scale(1.02);
 }
+    }
+
+
 
 .gallery1 {
     width: 100%;
@@ -644,10 +653,8 @@ padding-bottom: 300px;
     height: 100%;
     background-color: rgba(0,0,0,0.4);
     transition: .3s .4s;
-}
 
-
-#overlay img{
+img{
     top: 0;
     left: 0;
     right: 0;
@@ -658,6 +665,9 @@ padding-bottom: 300px;
     width:700px;
 
 }
+	
+}
+
 
 #closebutton {
     color: white;
@@ -717,12 +727,14 @@ padding: 200px 0;
         float: left;
         margin: 5px;
     position: relative;
-    }
-
-.social1:hover{
+	
+&:hover{
 
   animation: grow2 5s;
 }
+	
+    }
+
 
 #overlay {
 
@@ -736,10 +748,8 @@ padding: 200px 0;
     left:0;
     background-color: rgba(0,0,0,0.4);
     transition: .3s .4s;
-
-}
-
-#overlay img{
+	
+img{
     top: 0;
     left: 0;
     right: 0;
@@ -749,5 +759,9 @@ padding: 200px 0;
     animation: expand .5s;
     width:300px;
 
-}   
+}   	
+
+}
+
+
     
