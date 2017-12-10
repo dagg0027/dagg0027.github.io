@@ -66,36 +66,25 @@ li {
 
 }
 
-.current {
-
-	color: #2262AD;
-
-}
-
-
 
 /**** headers ****/
 
 h1, h2, h4, h5 {
 	color: #fff;
+	font-weightL bold;
+	text-align: center;
+}
 
 h1 {
-    margin-top: 100px;
-    font-weight:bold;
+    margin-top: 100px;  
     font-size: 55px;
-    text-align: center;
-  
-
-}
+  }
 
 
 h2 {
-    margin-top: 100px;
-    font-weight: bold;
+    margin-top: 100px;    
     font-size: 40px;
-    text-align: center;
-   
-}
+  }
 
 h3 {
     margin-top: 100px;
@@ -110,22 +99,14 @@ h3 {
 
 
 h4 {
-   margin-top: 50px;
-    font-weight: bold;
+    margin-top: 50px;    
     font-size: 26px;
-    text-align: center;
-
-
-}
+   }
 
 h5 {
-    padding-top: 150px;
-    font-weight: bold;
+    padding-top: 150px;   
     font-size: 40px;
-    text-align: center;
-  
-
-}
+  }
 
        
 
@@ -177,17 +158,6 @@ padding-top: 100px;
   }
 
 /**** gallery ****/
-
-
-h5 {
-   
-    font-weight: bold;
-    font-size: 40px;
-    text-align: center;
-    color: white;
-
-}
-
 
 #slide3{
 background: url(../images/cuba.jpg)  no-repeat fixed;
@@ -539,7 +509,12 @@ margin: 0;
 @media only screen and (max-width : 460px) {    
 
     /*** headers ***/
-    
+  
+h4, h5 {
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	}
 h3 {
 
     font-weight: normal;
@@ -554,20 +529,13 @@ h3 {
 
 
 h4 {
-   margin-top: 50px;
-    font-weight: bold;
+   margin-top: 50px;    
     font-size: 26px;
-    text-align: center;
-    color: white;
-
 }
 
 h5 {
-   padding-top: 0px;
-    font-weight: bold;
-    font-size: 30px;
-    text-align: center;
-    color: white;
+   padding-top: 0px;    
+   font-size: 30px;
 
 }
     
@@ -682,13 +650,14 @@ img{
     position: absolute;
     font-weight: bold;
 
-
-}
-
-#closebutton:hover {
+&:hover {
       animation: grow 2s;
 
 }
+
+ }
+
+
 
     
 /**** contact ***/
